@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5th Grade Math: Mastering Fractions</title>
+    <style>
+        :root {
+            --primary: #4a90e2;
+            --secondary: #f5a623;
+            --success: #7ed321;
+            --dark: #333;
+            --light: #f9f9f9;
+        }
+
+        body {
+            font-family: 'Comic Sans MS', 'Chalkboard SE', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            margin: 0;
+            padding: 0;
+            background-color: #eef2f5;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: var(--primary);
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: var(--secondary);
+            border-bottom: 3px solid var(--secondary);
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+
+        h3 {
+            color: #505050;
+            margin-top: 25px;
+        }
+
+        p {
+            font-size: 1.1rem;
+        }
+
+        /* Fraction Styling */
+        .fraction {
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+            margin: 0 5px;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        .fraction .top {
+            display: block;
+            border-bottom: 2px solid currentColor;
+            padding: 0 2px;
+        }
+        .fraction .bottom {
+            display: block;
+            padding: 0 2px;
+        }
+
+        /* Pizza/Pie Chart Visualization */
+        .visual-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+
+        .pie-wrapper {
+            text-align: center;
+            margin: 10px;
+        }
+
+        .pie {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: #ddd;
+            border: 2px solid #333;
+            margin: 0 auto 10px auto;
+        }
+
+        /* Box Styles */
+        .box {
+            background-color: var(--light);
+            border-left: 5px solid var(--primary);
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .tip-box {
+            background-color: #fff8e1;
+            border-left: 5px solid var(--secondary);
+            padding: 15px;
+        }
+
+        /* Butterfly Method Styling */
+        .butterfly-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            text-align: center;
+            align-items: center;
+            background: #f0f4f8;
+            padding: 20px;
+            border-radius: 15px;
+        }
+        .butterfly-arrow {
+            font-size: 2rem;
+            color: var(--primary);
+            font-weight: bold;
+        }
+
+        /* Practice Section */
+        .practice-problem {
+            background: white;
+            border: 2px dashed #ccc;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+
+        /* Interactive Details */
+        details {
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        summary {
+            font-weight: bold;
+            color: var(--primary);
+            outline: none;
+        }
+        .answer {
+            color: var(--success);
+            font-weight: bold;
+            margin-top: 5px;
+            padding-left: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>🍕 Mastering Fractions</h1>
+    <p style="text-align: center;">A guide for 5th Graders</p>
+
+    <h2>Part 1: What is a Fraction?</h2>
+    <p>A fraction is a way of saying "a piece of something." It has two parts:</p>
+
+    <div class="visual-container">
+        <div class="pie-wrapper">
+            <div class="pie" style="background: conic-gradient(var(--primary) 0% 37.5%, #ddd 37.5% 100%);"></div>
+            <div class="fraction">
+                <span class="top">3</span>
+                <span class="bottom">8</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="box">
+        <ol>
+            <li><strong>Bottom Number (Denominator):</strong> How many pieces make the whole? (The Name)</li>
+            <li><strong>Top Number (Numerator):</strong> How many pieces do you have? (The Count)</li>
+        </ol>
+    </div>
+
+    <h2>Part 2: How to Compare Fractions</h2>
+
+    <h3>Method A: Common Numerator</h3>
+    <div class="tip-box">
+        <strong>The Rule:</strong> If the Top Numbers are the SAME, the fraction with the <strong>smaller bottom number</strong> is BIGGER.
+    </div>
+    <p>Think about a cake. Sharing with <strong>3</strong> people gives you big slices. Sharing with <strong>10</strong> people gives you tiny crumbs!</p>
+
+    <div class="visual-container">
+        <div class="pie-wrapper">
+            <div class="pie" style="background: conic-gradient(var(--success) 0% 66%, #ddd 66% 100%);"></div>
+            <div class="fraction"><span class="top">2</span><span class="bottom">3</span></div>
+            <p>Big Slices!</p>
+        </div>
+        <div style="font-size: 2rem;">&gt;</div>
+        <div class="pie-wrapper">
+            <div class="pie" style="background: conic-gradient(var(--success) 0% 20%, #ddd 20% 100%);"></div>
+            <div class="fraction"><span class="top">2</span><span class="bottom">10</span></div>
+            <p>Tiny Slices</p>
+        </div>
+    </div>
+
+    <h3>Method B: The Butterfly Method 🦋</h3>
+    <p>Use this when the numbers are totally different. We <strong>Cross Multiply</strong>!</p>
+    
+    <p><strong>Example:</strong> Compare <span class="fraction"><span class="top">3</span><span class="bottom">5</span></span> vs <span class="fraction"><span class="top">4</span><span class="bottom">7</span></span></p>
+
+    <div class="butterfly-grid">
+        <div>
+            <p><strong>Wing 1</strong></p>
+            <p>Bottom Right (7) &times; Top Left (3)</p>
+            <p style="color:var(--primary); font-size: 1.5rem;">= 21</p>
+        </div>
+        <div>
+            <p><strong>Wing 2</strong></p>
+            <p>Bottom Left (5) &times; Top Right (4)</p>
+            <p style="color:var(--secondary); font-size: 1.5rem;">= 20</p>
+        </div>
+    </div>
+    <p style="text-align: center;">Since <strong>21</strong> is bigger than <strong>20</strong>, the left side wins!</p>
+    <p style="text-align: center; font-size: 1.5rem;">
+        <span class="fraction"><span class="top">3</span><span class="bottom">5</span></span> &gt; <span class="fraction"><span class="top">4</span><span class="bottom">7</span></span>
+    </p>
+
+    <h2>Part 3: Practice Problems</h2>
+    <p>Try these on your own, then click "Reveal Answer" to check!</p>
+
+    <h3>Set A: Think about Slice Size</h3>
+    
+    <div class="practice-problem">
+        <p>1. Which is bigger: <span class="fraction"><span class="top">1</span><span class="bottom">4</span></span> or <span class="fraction"><span class="top">1</span><span class="bottom">8</span></span> ?</p>
+        <details>
+            <summary>Reveal Answer</summary>
+            <div class="answer">1/4 is bigger (sharing with 4 people is better than 8!)</div>
+        </details>
+    </div>
+
+    <div class="practice-problem">
+        <p>2. Which is bigger: <span class="fraction"><span class="top">3</span><span class="bottom">5</span></span> or <span class="fraction"><span class="top">3</span><span class="bottom">10</span></span> ?</p>
+        <details>
+            <summary>Reveal Answer</summary>
+            <div class="answer">3/5 is bigger (5ths are larger slices than 10ths)</div>
+        </details>
+    </div>
+
+    <h3>Set B: Butterfly Method</h3>
+
+    <div class="practice-problem">
+        <p>3. Which is bigger: <span class="fraction"><span class="top">2</span><span class="bottom">3</span></span> or <span class="fraction"><span class="top">3</span><span class="bottom">4</span></span> ?</p>
+        <details>
+            <summary>Reveal Answer</summary>
+            <div class="answer">3/4 is bigger (Cross multiply: 8 vs 9. 9 wins!)</div>
+        </details>
+    </div>
+
+    <div class="practice-problem">
+        <p>4. Which is bigger: <span class="fraction"><span class="top">1</span><span class="bottom">5</span></span> or <span class="fraction"><span class="top">2</span><span class="bottom">9</span></span> ?</p>
+        <details>
+            <summary>Reveal Answer</summary>
+            <div class="answer">2/9 is bigger (Cross multiply: 9 vs 10. 10 wins!)</div>
+        </details>
+    </div>
+
+</div>
+
+</body>
+</html>
