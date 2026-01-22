@@ -1,0 +1,328 @@
+Here is the complete guide, adding the new "Transformation" cases (converting fractions) and a full Master Exercise at the end.
+
+---
+
+## **Part 4: The Transformation Magic**
+
+Sometimes you have a "Top-Heavy" fraction (Improper) and you want to make it look nice (Mixed Number), or the other way around. Here is how to do it step-by-step.
+
+### **Case 1: Improper to Mixed (The "Pizza Box" Method)**
+
+**Goal:** Turn  into a Mixed Number.
+
+*Imagine you have 13 slices of pizza, and each box holds 4 slices. How many full boxes can you fill?*
+
+1. **Divide:** Ask, "How many times does 4 fit into 13?"
+*  ... It fits **3** times completely. (This is your **Whole Number**).
+
+
+2. **Find the Leftover:** What is left?
+* . (This is your new **Top Number**).
+
+
+3. **Keep the Bottom:** The box size doesn't change.
+* The bottom number stays **4**.
+
+
+
+**Answer:**  (3 full boxes, and 1 slice left over).
+
+---
+
+### **Case 2: Mixed to Improper (The "MAD" Method)**
+
+**Goal:** Turn  into an Improper Fraction.
+
+Use the **MAD** strategy:
+
+* **M** = Multiply
+* **A** = Add
+* **D** = Denominator stays the same
+
+**Step-by-Step:**
+
+1. **M (Multiply):** Multiply the Whole Number by the Bottom Number.
+* .
+
+
+2. **A (Add):** Add the Top Number to that answer.
+* . (This is your new Top Number).
+
+
+3. **D (Denominator):** Keep the bottom number the same.
+* The bottom is still **5**.
+
+
+
+**Answer:** 
+
+---
+
+## **Part 5: The Full Master Exercise**
+
+Here is a big practice set covering everything we have learned.
+
+### **Section A: True or False?**
+
+1.  is equal to 1 whole.
+2.  is smaller than .
+3. A "Mixed Number" has a whole number and a fraction.
+
+### **Section B: Who is Bigger? (Compare)**
+
+*Use , , or *
+4.   ___ 
+5.   ___ 
+6.   ___  *(Use Butterfly!)*
+
+### **Section C: Transformations (Convert)**
+
+7. Turn  into a Mixed Number.
+8. Turn  into a Mixed Number.
+9. Turn  into an Improper Fraction (Use MAD!).
+10. Turn  into an Improper Fraction (Use MAD!).
+
+---
+
+### **Answer Key**
+
+1. **True** (If you have 5 pieces out of 5, you have the whole thing!)
+2. **False** (1/2 is much bigger than 1/10).
+3. **True**.
+4. **** (5 slices is more than 3).
+5. **** (5ths are bigger slices than 9ths).
+6. **** (Butterfly: Left side is 8, Right side is 9. 9 wins).
+7. **** (2 goes into 5 twice, with 1 left over).
+8. **** (3 goes into 7 twice, with 1 left over).
+9. **** (, plus ).
+10. **** (, plus ).
+
+---
+
+## **The Ultimate HTML Interactive Guide**
+
+Here is the updated HTML code. It now includes the **MAD Method**, the **Pizza Box Method**, and the **Full Practice Test**.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5th Grade Math: The Complete Fraction Guide</title>
+    <style>
+        :root {
+            --primary: #4a90e2; /* Blue */
+            --secondary: #f5a623; /* Orange */
+            --success: #7ed321; /* Green */
+            --purple: #9013fe; /* Purple for MAD method */
+            --dark: #333;
+            --light: #f9f9f9;
+        }
+
+        body {
+            font-family: 'Comic Sans MS', 'Chalkboard SE', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: #eef2f5;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        h1, h2, h3 { text-align: center; }
+        h1 { color: var(--primary); font-size: 2.5rem; }
+        h2 { color: var(--secondary); border-bottom: 3px solid #eee; padding-bottom: 10px; margin-top: 40px; }
+        h3 { color: #555; }
+
+        /* Fraction Styling */
+        .fraction {
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.3em;
+            margin: 0 5px;
+        }
+        .fraction .top { display: block; border-bottom: 2px solid currentColor; padding: 0 2px; }
+        .fraction .bottom { display: block; padding: 0 2px; }
+
+        /* Visual Boxes */
+        .box {
+            background-color: var(--light);
+            border-left: 6px solid var(--primary);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        
+        .mad-box {
+            background-color: #f3e5f5;
+            border-left: 6px solid var(--purple);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        /* Practice Problem Styling */
+        .practice-card {
+            background: white;
+            border: 2px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 15px;
+            margin-bottom: 15px;
+            transition: transform 0.2s;
+        }
+        .practice-card:hover {
+            border-color: var(--primary);
+            transform: translateY(-2px);
+        }
+
+        /* Buttons and Details */
+        details { margin-top: 10px; }
+        summary {
+            cursor: pointer;
+            font-weight: bold;
+            color: var(--primary);
+            list-style: none; /* Hide default triangle */
+        }
+        summary::after { content: " 👉 Click to check answer"; font-size: 0.9em; opacity: 0.7; }
+        .answer {
+            background-color: #dffffd;
+            color: #00796b;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        /* MAD Method Visualization */
+        .mad-step {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin: 10px 0;
+            font-size: 1.2rem;
+        }
+        .circle-number {
+            background: var(--purple);
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>🍕 The Complete Fraction Guide</h1>
+    <p style="text-align: center;">For 5th Grade Math Whizzes!</p>
+
+    <h2>1. The Basics Review</h2>
+    <div class="box">
+        <p><strong>Top Number (Numerator):</strong> How many pieces you have.</p>
+        <p><strong>Bottom Number (Denominator):</strong> How many pieces make a whole.</p>
+        <p>Example: <span class="fraction"><span class="top">3</span><span class="bottom">4</span></span> means 3 pieces out of 4.</p>
+    </div>
+
+    <h2>2. Transforming Fractions</h2>
+    
+    <h3>A. Improper to Mixed (The Pizza Box Method)</h3>
+    <p>Convert <span class="fraction"><span class="top">13</span><span class="bottom">4</span></span> into a Mixed Number.</p>
+    <div class="box">
+        <p>Ask: <strong>How many times does 4 fit into 13?</strong></p>
+        <ul>
+            <li>It fits <strong>3</strong> times (because 4 &times; 3 = 12).</li>
+            <li>How many are left over? 13 - 12 = <strong>1</strong> slice left.</li>
+            <li>The bottom number stays <strong>4</strong>.</li>
+        </ul>
+        <p style="font-size: 1.5rem; text-align: center;">Answer: <strong>3 <span class="fraction"><span class="top">1</span><span class="bottom">4</span></span></strong></p>
+    </div>
+
+    <h3>B. Mixed to Improper (The MAD Method)</h3>
+    <p>Convert <strong>2 <span class="fraction"><span class="top">3</span><span class="bottom">5</span></span></strong> into an Improper Fraction.</p>
+    
+    <div class="mad-box">
+        <div class="mad-step">
+            <div class="circle-number">M</div>
+            <strong>Multiply:</strong> Whole number (2) &times; Bottom (5) = <strong>10</strong>
+        </div>
+        <div class="mad-step">
+            <div class="circle-number">A</div>
+            <strong>Add:</strong> Take the 10 and add the Top (3) = <strong>13</strong>
+        </div>
+        <div class="mad-step">
+            <div class="circle-number">D</div>
+            <strong>Denominator:</strong> Stays the same = <strong>5</strong>
+        </div>
+        <p style="font-size: 1.5rem; text-align: center;">Answer: <strong><span class="fraction"><span class="top">13</span><span class="bottom">5</span></span></strong></p>
+    </div>
+
+    <h2>3. The Master Exercise</h2>
+    <p>Test your skills! Try to solve it in your head or on paper first.</p>
+
+    <h3>Part A: Comparing Fractions</h3>
+    
+    <div class="practice-card">
+        <p><strong>1.</strong> Which is bigger? <span class="fraction"><span class="top">4</span><span class="bottom">5</span></span> vs <span class="fraction"><span class="top">4</span><span class="bottom">9</span></span></p>
+        <details>
+            <summary>Reveal Answer</summary>
+            <div class="answer">4/5 is bigger. (Same top number? Smaller bottom means bigger slices!)</div>
+        </details>
+    </div>
+
+    <div class="practice-card">
+        <p><strong>2.</strong> Which is bigger? <span class="fraction"><span class="top">2</span><span class="bottom">3</span></span> vs <span class="fraction"><span class="top">3</span><span class="bottom">4</span></span></p>
+        <details>
+            <summary>Reveal Answer</summary>
+            <div class="answer">3/4 is bigger. (Butterfly Method: 8 vs 9. The 9 wins!)</div>
+        </details>
+    </div>
+
+    <h3>Part B: Transforming Fractions</h3>
+
+    <div class="practice-card">
+        <p><strong>3.</strong> Change <span class="fraction"><span class="top">7</span><span class="bottom">2</span></span> into a Mixed Number.</p>
+        <details>
+            <summary>Reveal Answer</summary>
+            <div class="answer">3 1/2 (2 fits into 7 three times, with 1 left over).</div>
+        </details>
+    </div>
+
+    <div class="practice-card">
+        <p><strong>4.</strong> Change <strong>1 <span class="fraction"><span class="top">2</span><span class="bottom">3</span></span></strong> into an Improper Fraction.</p>
+        <details>
+            <summary>Reveal Answer</summary>
+            <div class="answer">5/3 (MAD Method: 1&times;3=3, plus 2=5).</div>
+        </details>
+    </div>
+
+    <h3>Part C: Challenge Question</h3>
+    <div class="practice-card" style="border-color: var(--secondary);">
+        <p><strong>5.</strong> Sort these from smallest to biggest: <span class="fraction"><span class="top">1</span><span class="bottom">2</span></span> , <span class="fraction"><span class="top">1</span><span class="bottom">10</span></span> , <span class="fraction"><span class="top">1</span><span class="bottom">4</span></span></p>
+        <details>
+            <summary>Reveal Answer</summary>
+            <div class="answer">1/10 &rightarrow; 1/4 &rightarrow; 1/2 (Think about slice sizes!)</div>
+        </details>
+    </div>
+
+</div>
+
+</body>
+</html>
+
+```
